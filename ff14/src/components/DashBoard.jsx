@@ -4,7 +4,7 @@ import MovieCard from './MovieCard'
 const Dashboard = (props) => {
     console.log('props', props)
     return (
-        <div>
+        <div className='cardContainer'>
             {props.data.map(item => {
                 return <MovieCard key={item.id} data={item} />
             })}

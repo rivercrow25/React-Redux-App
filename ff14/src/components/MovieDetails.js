@@ -4,14 +4,14 @@ import { connect } from 'react-redux'
 const MovieDetails = ({ info }) => {
     console.log(info)
     return (
-        <>
+        <div >
             <h2>{info.name}</h2>
             <ul>
                 <li>{info.classification}</li>
                 <li>eye colors:{info.eye_colors}</li>
                 <li>hair colors: {info.hair_colors}</li>
             </ul>
-        </>
+        </div>
     )
 }
 const mstp = state => {
